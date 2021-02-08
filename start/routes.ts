@@ -7,7 +7,7 @@
 import Route from "@ioc:Adonis/Core/Route";
 
 Route.get("/", async () => {
-  return {};
+  return { message: "Server API is running" };
 });
 
 Route.post("/login", "AuthController.login");
